@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="./transform.js"></script>  
+</head>
+
+
+<body>
+
+	<a target="_blank" href="http://lbs.amap.com/console/show/picker">高德坐标拾取系统</a>
+	<a target="_blank" href="http://api.map.baidu.com/lbsapi/getpoint/index.html">百度坐标拾取系统</a>
+
+	<div id="main">
+		<p>lat<input type="number" name="lat" id="lat_input"></p>
+		<p>lon<input type="number" name="lon" id="lon_input"></p>
+	</div>
+
+	<div>
+		<p><input type="button" value="高德坐标转换" onclick="gcj2wgs_clicked()"></p>
+		<p><input type="button" value="百度坐标转换" onclick="bd2wgs_clicked()"></p>
+	</div>
+	<div>
+		<p id="lat_text">lat:</p>
+		<p id="lon_text">lon:</p>
+	</div>
+
+<script type="text/javascript">
+
+    var lat_input = document.getElementById("lat_input");
+    var lon_input = document.getElementById("lon_input");
+    var lat_text = document.getElementById("lat_text");
+    var lon_text = document.getElementById("lon_text");
+
+    function gcj2wgs_clicked() {
+        var wgs = gcj2wgs(lat_input.value, lon_input.value);
+        lat_text.innerHTML = "lat:" + wgs.lat;
+        lon_text.innerHTML = "lon:" + wgs.lng;
+    }
+    function bd2wgs_clicked() {
+        var wgs = bd2wgs(lat_input.value, lon_input.value);
+        lat_text.innerHTML = "lat:" + wgs.lat;
+        lon_text.innerHTML = "lon:" + wgs.lng;
+    }
+</script>
+
+</body>
+
+</html>
