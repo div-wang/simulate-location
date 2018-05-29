@@ -54,7 +54,7 @@ clone项目 [simulate-location](https://github.com/div-wang/simulate-location)
 #### 真机运行
 + xcode真机运行项目，在`run`起来之后，点击`debug > simulate location > soho`就切换到该坐标定位了。
 + 或者点击控制台定位图标：
-![图片](../png/001.jpg)
+![图片](./png/001.jpg)
 
 
 #### 随时随地打卡
