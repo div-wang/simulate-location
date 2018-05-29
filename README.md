@@ -18,18 +18,20 @@
 + [高德](http://lbs.amap.com/console/show/picker)
 + [百度](http://api.map.baidu.com/lbsapi/getpoint/index.html)
 
-首先，根据各自的喜好，选好你想要模拟的位置，这里以高德地图**望京soho为例**原始坐标为例：
+首先，根据各自的喜好，选好你想要模拟的位置，这里以高德地图**望京soho**原始坐标为例：
 
-+ 可以看到右边显示的**GCJ-02**坐标：
++ 高德地图上望京soho的**GCJ-02**坐标：
 ```
 116.48105,39.996794
 ```
-+ ios所需要是**WGS-84**坐标，高德给我们的是**GCJ-02**坐标。我们使用最新[eviltransform.gcj2wgs](https://github.com/googollee/eviltransform/tree/master/javascript#gcjtowgsgcj2wgs)方法转换出所需要的坐标。
+
++ 我们使用最新[eviltransform.gcj2wgs](https://github.com/googollee/eviltransform/tree/master/javascript#gcjtowgsgcj2wgs)方法转换出所需要的**WGS-84**坐标。（百度地图使用[eviltransform.bd2wgs](https://github.com/googollee/eviltransform/tree/master/javascript#%E7%99%BE%E5%BA%A6bd-09)方法）
 
 + 解密后的**WGS-84**坐标：
 ```
 116.47496089091223,39.995513178011876
 ```
+
 
 ### 运行项目
 clone项目 [simulate-location](https://github.com/div-wang/simulate-location)
@@ -50,7 +52,10 @@ clone项目 [simulate-location](https://github.com/div-wang/simulate-location)
 把转换得到的 **GCJ-02** 坐标对应到 **lat** 和 **lon** 里面即可。
 
 #### 真机运行
-打开定位，xcode真机运行项目
++ xcode真机运行项目，在`run`起来之后，点击`debug > simulate location > soho`就切换到该坐标定位了。
++ 或者点击控制台定位图标：
+![图片](../png/001.jpg)
+
 
 #### 随时随地打卡
 + 这个时候千万别点**Stop**，**Home**键后台，然后直接拔掉数据线即可（猜测是Xcode开发者模式开了个进程来模拟定位，如果Xcode上没有Stop，那这个进程就不会Kill掉）。
