@@ -14,9 +14,7 @@
 		C6412F061E76F03900F467FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6412F041E76F03900F467FE /* Main.storyboard */; };
 		C6412F081E76F03900F467FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6412F071E76F03900F467FE /* Assets.xcassets */; };
 		C6412F0B1E76F03900F467FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6412F091E76F03900F467FE /* LaunchScreen.storyboard */; };
-		C6412F161E76F03900F467FE /* SimulateLocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6412F151E76F03900F467FE /* SimulateLocationTests.swift */; };
-		C6412F211E76F03900F467FE /* SimulateLocationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6412F201E76F03900F467FE /* SimulateLocationUITests.swift */; };
-		C6412F2F1E76F05F00F467FE /* ceshi.gpx in Resources */ = {isa = PBXBuildFile; fileRef = C6412F2E1E76F05F00F467FE /* ceshi.gpx */; };
+		C6412F2F1E76F05F00F467FE /* soho.gpx in Resources */ = {isa = PBXBuildFile; fileRef = C6412F2E1E76F05F00F467FE /* soho.gpx */; };
 		C6412F321E7705AD00F467FE /* LocationTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6412F311E7705AD00F467FE /* LocationTransform.swift */; };
 		C6904EB61EAE3DD800F4EF40 /* transform.html in Resources */ = {isa = PBXBuildFile; fileRef = C6904EB41EAE3DD800F4EF40 /* transform.html */; };
 		C6904EB71EAE3DD800F4EF40 /* transform.js in Resources */ = {isa = PBXBuildFile; fileRef = C6904EB51EAE3DD800F4EF40 /* transform.js */; };
@@ -50,12 +48,8 @@
 		C6412F0A1E76F03900F467FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6412F0C1E76F03900F467FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6412F111E76F03900F467FE /* SimulateLocationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimulateLocationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C6412F151E76F03900F467FE /* SimulateLocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulateLocationTests.swift; sourceTree = "<group>"; };
-		C6412F171E76F03900F467FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6412F1C1E76F03900F467FE /* SimulateLocationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimulateLocationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C6412F201E76F03900F467FE /* SimulateLocationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulateLocationUITests.swift; sourceTree = "<group>"; };
-		C6412F221E76F03900F467FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C6412F2E1E76F05F00F467FE /* ceshi.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ceshi.gpx; sourceTree = "<group>"; };
+		C6412F2E1E76F05F00F467FE /* soho.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = soho.gpx; sourceTree = "<group>"; };
 		C6412F311E7705AD00F467FE /* LocationTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationTransform.swift; sourceTree = "<group>"; };
 		C6904EB41EAE3DD800F4EF40 /* transform.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = transform.html; sourceTree = "<group>"; };
 		C6904EB51EAE3DD800F4EF40 /* transform.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = transform.js; sourceTree = "<group>"; };
@@ -90,8 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				C6412EFD1E76F03900F467FE /* SimulateLocation */,
-				C6412F141E76F03900F467FE /* SimulateLocationTests */,
-				C6412F1F1E76F03900F467FE /* SimulateLocationUITests */,
 				C6412EFC1E76F03900F467FE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -118,24 +110,6 @@
 			path = SimulateLocation;
 			sourceTree = "<group>";
 		};
-		C6412F141E76F03900F467FE /* SimulateLocationTests */ = {
-			isa = PBXGroup;
-			children = (
-				C6412F151E76F03900F467FE /* SimulateLocationTests.swift */,
-				C6412F171E76F03900F467FE /* Info.plist */,
-			);
-			path = SimulateLocationTests;
-			sourceTree = "<group>";
-		};
-		C6412F1F1E76F03900F467FE /* SimulateLocationUITests */ = {
-			isa = PBXGroup;
-			children = (
-				C6412F201E76F03900F467FE /* SimulateLocationUITests.swift */,
-				C6412F221E76F03900F467FE /* Info.plist */,
-			);
-			path = SimulateLocationUITests;
-			sourceTree = "<group>";
-		};
 		C6412F301E76F06500F467FE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,7 +118,7 @@
 				C6412F071E76F03900F467FE /* Assets.xcassets */,
 				C6412F091E76F03900F467FE /* LaunchScreen.storyboard */,
 				C6412F0C1E76F03900F467FE /* Info.plist */,
-				C6412F2E1E76F05F00F467FE /* ceshi.gpx */,
+				C6412F2E1E76F05F00F467FE /* soho.gpx */,
 				C61074641E82B3B5003EA65B /* xiaojiejie.gpx */,
 			);
 			name = Resources;
@@ -268,7 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6412F0B1E76F03900F467FE /* LaunchScreen.storyboard in Resources */,
-				C6412F2F1E76F05F00F467FE /* ceshi.gpx in Resources */,
+				C6412F2F1E76F05F00F467FE /* soho.gpx in Resources */,
 				C6412F081E76F03900F467FE /* Assets.xcassets in Resources */,
 				C6904EB61EAE3DD800F4EF40 /* transform.html in Resources */,
 				C6412F061E76F03900F467FE /* Main.storyboard in Resources */,
@@ -309,7 +283,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6412F161E76F03900F467FE /* SimulateLocationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,7 +290,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6412F211E76F03900F467FE /* SimulateLocationUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
